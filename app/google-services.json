@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "432168530850",
+    "project_id": "signai-a820c",
+    "storage_bucket": "signai-a820c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432168530850:android:73611074f45f05aa1638fb",
+        "android_client_info": {
+          "package_name": "com.example.signai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432168530850-ng34vjrsb70g8r8ra0c70hgsjnghj2er.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9-0RmjJpVYyWDGFnW7VrwxMtXVrG9LUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432168530850-ng34vjrsb70g8r8ra0c70hgsjnghj2er.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
