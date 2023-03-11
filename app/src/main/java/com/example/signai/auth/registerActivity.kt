@@ -114,12 +114,10 @@ class registerActivity : AppCompatActivity(), View.OnClickListener {
     private fun usernameLengthChecker(){
         username.doOnTextChanged { text, start, before, count ->
             if (text!!.isNotEmpty()){
-                if (text!!.length > 16) {
-                    username.setError("Make it short!")
-                }
+                username.background = resources.getDrawable(R.drawable.custom_edittext_notnull)
             }
             else if(text.isEmpty()) {
-                username.setError("Please Enter your name!")
+                username.background = resources.getDrawable(R.drawable.custom_edittext)
             }
         }
     }

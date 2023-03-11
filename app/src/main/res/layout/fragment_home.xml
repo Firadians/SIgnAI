@@ -7,407 +7,3470 @@
     tools:context=".HomeFragment">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="24dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="45dp"
-                android:gravity="center"
-                android:text="Hear"
-                android:textSize="20dp"
-                app:fontFamily="@font/lexend_medium"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/imageView2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:layout_gravity="bottom"
-                android:src="@drawable/ic_vector" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="45dp"
-                android:gravity="center"
-                android:text="Me"
-                android:textSize="20dp"
-                app:fontFamily="@font/lexend_medium"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView2"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/searchView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:text="Halo,"
-                android:textSize="20dp"
-                app:fontFamily="@font/lexend_medium" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.3"
-                android:text="Maharanifwz!"
-                android:textSize="20dp"
-                app:fontFamily="@font/lexend_medium" />
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="10dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.2"
-                android:gravity="right"
-                android:src="@drawable/ic_home_settings" />
-        </LinearLayout>
-
-        <SearchView
-            android:id="@+id/searchView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/custom_searchbar"
-            android:queryHint="Cari"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
-
-        <RelativeLayout
-            android:id="@+id/relativeLayout"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/searchView">
-
-            <ImageView
-                android:id="@+id/imageView4"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:src="@drawable/bgg" />
+                android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="103dp"
-                android:layout_height="35dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="21dp"
-                android:layout_marginTop="127dp"
-                android:layout_marginEnd="239dp"
-                android:background="@drawable/custom_edittext"
-                android:text="Mulai"
-                android:textAllCaps="false"
-                app:backgroundTint="#7153E7"
-                app:fontFamily="@font/lexend_light"
-                tools:ignore="TouchTargetSizeCheck" />
-        </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="24dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:id="@+id/linearLayout4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="Hear"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/lexend_medium"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:layout_weight="50"
-                android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/ic_vector" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="Me"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/lexend_medium"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toTopOf="@+id/searchView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="Halo,"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/lexend_medium" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:text="Maharanifwz!"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/lexend_medium" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="right"
+                        android:src="@drawable/ic_home_settings" />
+                </LinearLayout>
+
+                <SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/custom_searchbar"
+                    android:queryHint="Cari"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
                 <ImageView
-                    android:id="@+id/imageView6"
-                    android:layout_width="170dp"
-                    android:layout_height="114dp"
-                    android:src="@drawable/home_permainan" />
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginTop="16dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bgg"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                    tools:layout_editor_absoluteY="170dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:gravity="left"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:layout_width="170dp"
+                            android:layout_height="114dp"
+                            android:src="@drawable/home_permainan" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Permainan"
+                            android:textSize="14dp"
+                            app:fontFamily="@font/lexend_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            android:layout_width="170dp"
+                            android:layout_height="114dp"
+                            android:src="@drawable/home_komunitas" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Komunitas"
+                            android:textSize="14dp"
+                            app:fontFamily="@font/lexend_medium" />
+                    </LinearLayout>
+                </LinearLayout>
 
                 <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="170dp"
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Permainan"
-                    android:textSize="14dp"
-                    app:fontFamily="@font/lexend_medium" />
-            </LinearLayout>
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Susul Temanmu!"
+                    android:textSize="20dp"
+                    app:fontFamily="@font/lexend_medium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:layout_weight="50"
-                android:orientation="vertical">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:scrollbars="none"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8"
+                    tools:ignore="SpeakableTextPresentCheck">
 
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="170dp"
-                    android:layout_height="114dp"
-                    android:src="@drawable/home_komunitas" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="170dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Komunitas"
-                    android:textSize="14dp"
-                    app:fontFamily="@font/lexend_medium" />
-            </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView11"
+                                android:layout_width="3dp"
+                                android:layout_height="43dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/number1" />
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="241dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="14dp"
+                                android:text="maharanifwz"
+                                android:textSize="18dp"
+                                app:fontFamily="@font/lexend_medium" />
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="55dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.1"
+                                android:background="@drawable/custom_pointtext"
+                                android:gravity="center"
+                                android:text="850px" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#CBD2E0" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView12"
+                                android:layout_width="3dp"
+                                android:layout_height="43dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/number2" />
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="241dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="14dp"
+                                android:text="harun_asrori"
+                                android:textSize="18dp"
+                                app:fontFamily="@font/lexend_medium" />
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="55dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.1"
+                                android:background="@drawable/custom_pointtext"
+                                android:gravity="center"
+                                android:text="850px" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#CBD2E0" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView13"
+                                android:layout_width="3dp"
+                                android:layout_height="43dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/number3" />
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="241dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="14dp"
+                                android:text="glovico"
+                                android:textSize="18dp"
+                                app:fontFamily="@font/lexend_medium" />
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="55dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.1"
+                                android:background="@drawable/custom_pointtext"
+                                android:gravity="center"
+                                android:text="850px" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#CBD2E0" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="3dp"
+                                android:layout_height="43dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/number4" />
+
+                            <TextView
+                                android:id="@+id/textView17"
+                                android:layout_width="241dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="14dp"
+                                android:text="ada_firdo"
+                                android:textSize="18dp"
+                                app:fontFamily="@font/lexend_medium" />
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="55dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.1"
+                                android:background="@drawable/custom_pointtext"
+                                android:gravity="center"
+                                android:text="850px" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#CBD2E0" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
-            android:text="Susul Temanmu!"
-            android:textSize="20dp"
-            app:fontFamily="@font/lexend_medium"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="265dp"
-            android:layout_marginStart="24dp"
-            android:scrollbars="none"
-            android:layout_marginEnd="24dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8"
-            tools:ignore="SpeakableTextPresentCheck">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="15dp"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imageView11"
-                        android:layout_width="3dp"
-                        android:layout_height="43dp"
-                        android:layout_gravity="center"
-                        android:layout_weight="0.5"
-                        android:src="@drawable/number1" />
-
-                    <TextView
-                        android:id="@+id/textView10"
-                        android:layout_width="241dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:gravity="center_vertical"
-                        android:text="maharanifwz"
-                        android:paddingLeft="14dp"
-                        android:textSize="18dp"
-                        app:fontFamily="@font/lexend_medium" />
-
-                    <TextView
-                        android:id="@+id/textView11"
-                        android:layout_width="55dp"
-                        android:layout_height="35dp"
-                        android:layout_gravity="center"
-                        android:layout_weight="0.1"
-                        android:background="@drawable/custom_pointtext"
-                        android:gravity="center"
-                        android:text="850px" />
-                </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#CBD2E0"
-                    android:layout_marginTop="10dp"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imageView12"
-                        android:layout_width="3dp"
-                        android:layout_height="43dp"
-                        android:layout_gravity="center"
-                        android:layout_weight="0.5"
-                        android:src="@drawable/number2" />
-
-                    <TextView
-                        android:id="@+id/textView12"
-                        android:layout_width="241dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="14dp"
-                        android:text="harun_asrori"
-                        android:textSize="18dp"
-                        app:fontFamily="@font/lexend_medium" />
-
-                    <TextView
-                        android:id="@+id/textView13"
-                        android:layout_width="55dp"
-                        android:layout_height="35dp"
-                        android:layout_gravity="center"
-                        android:layout_weight="0.1"
-                        android:background="@drawable/custom_pointtext"
-                        android:gravity="center"
-                        android:text="850px" />
-                </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#CBD2E0"
-                    android:layout_marginTop="10dp"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imageView13"
-                        android:layout_width="3dp"
-                        android:layout_height="43dp"
-                        android:layout_gravity="center"
-                        android:layout_weight="0.5"
-                        android:src="@drawable/number3" />
-
-                    <TextView
-                        android:id="@+id/textView14"
-                        android:layout_width="241dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="14dp"
-                        android:text="glovico"
-                        android:textSize="18dp"
-                        app:fontFamily="@font/lexend_medium" />
-
-                    <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="55dp"
-                        android:layout_height="35dp"
-                        android:layout_gravity="center"
-                        android:layout_weight="0.1"
-                        android:background="@drawable/custom_pointtext"
-                        android:gravity="center"
-                        android:text="850px" />
-                </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#CBD2E0"
-                    android:layout_marginTop="10dp"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imageView14"
-                        android:layout_width="3dp"
-                        android:layout_height="43dp"
-                        android:layout_gravity="center"
-                        android:layout_weight="0.5"
-                        android:src="@drawable/number4" />
-
-                    <TextView
-                        android:id="@+id/textView17"
-                        android:layout_width="241dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="14dp"
-                        android:text="ada_firdo"
-                        android:textSize="18dp"
-                        app:fontFamily="@font/lexend_medium" />
-
-                    <TextView
-                        android:id="@+id/textView16"
-                        android:layout_width="55dp"
-                        android:layout_height="35dp"
-                        android:layout_gravity="center"
-                        android:layout_weight="0.1"
-                        android:background="@drawable/custom_pointtext"
-                        android:gravity="center"
-                        android:text="850px" />
-                </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#CBD2E0"
-                    android:layout_marginTop="10dp"/>
-
-            </LinearLayout>
-        </ScrollView>
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigationView"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/menu_nav"
-            />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </FrameLayout>

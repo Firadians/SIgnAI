@@ -14,7 +14,13 @@
         android:theme="@style/Theme.SIgnAI"
         tools:targetApi="31">
         <activity
-            android:name=".auth.registerActivity"
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forgotPasswordActivity"
             android:exported="false" />
         <activity
             android:name=".splashscreen.appOpening"
@@ -32,7 +38,7 @@
             android:name=".auth.loginActivity"
             android:exported="false" />
         <activity
-            android:name=".MenuActivity"
+            android:name=".auth.registerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
