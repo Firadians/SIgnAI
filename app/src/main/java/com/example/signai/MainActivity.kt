@@ -20,8 +20,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //view bindings
-        nohpInput = findViewById(R.id.nohpInput)
-        textView2 = findViewById(R.id.textView2)
         usernameLengthChecker()
     }
 

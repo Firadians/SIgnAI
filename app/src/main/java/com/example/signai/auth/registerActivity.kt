@@ -7,6 +7,7 @@ import android.util.Patterns
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doOnTextChanged
@@ -32,7 +33,7 @@ class registerActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var nohp : EditText
     private lateinit var password : EditText
     private lateinit var createButton : Button
-    private lateinit var masukButton : Button
+    private lateinit var masukButton : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,7 +66,7 @@ class registerActivity : AppCompatActivity(), View.OnClickListener {
             R.id.createButton -> {
                 registerUser()
             }
-            R.id.daftarButton -> {
+            R.id.masukButton -> {
                 startActivity(Intent(this,loginActivity::class.java))
             }
         }
