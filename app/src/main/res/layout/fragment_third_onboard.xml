@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#53C9E7"
-    tools:context=".splashscreen.firstOnboardFragment">
+    tools:context=".splashscreen.thirdOnboardFragment">
 
     <TextView
         android:id="@+id/textView9"
@@ -25,9 +25,9 @@
         android:id="@+id/textView1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:justificationMode="inter_word"
-        android:fontFamily="@font/lexend_regular"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/lexend_regular"
+        android:justificationMode="inter_word"
         android:text="Purus tincidunt volutpat viverra arcu. Cras posuere praesent risus sed proin."
         app:layout_constraintEnd_toEndOf="@id/textView9"
         app:layout_constraintStart_toStartOf="@+id/textView9"
@@ -36,11 +36,12 @@
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/onboard_vector_1"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="40dp"
+        android:src="@drawable/onboard_vector_3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView1" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

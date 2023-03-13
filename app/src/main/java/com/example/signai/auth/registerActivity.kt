@@ -7,7 +7,6 @@ import android.util.Patterns
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doOnTextChanged
@@ -33,7 +32,7 @@ class registerActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var nohp : EditText
     private lateinit var password : EditText
     private lateinit var createButton : Button
-    private lateinit var masukButton : TextView
+    private lateinit var masukButton : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,7 +65,8 @@ class registerActivity : AppCompatActivity(), View.OnClickListener {
             R.id.createButton -> {
                 registerUser()
             }
-            R.id.masukButton -> {
+            // dodo sumpa saya gatau ini kudunya r.id apa tapi error sebelumnya km pake R.id.daftarButton padahal ga ada di xml
+            R.id.googleButton -> {
                 startActivity(Intent(this,loginActivity::class.java))
             }
         }
